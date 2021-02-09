@@ -38,70 +38,7 @@
 - **Time Step**을 주어 3D텐서로 변환 후 `Long short-term memory`모델로 학습 후 안전/위험도 예측
 
 
-
-## 5. System
-```Python
-$ main_project
-│
-├─ _db
-│   └─ data
-│       ├─ crawling_data
-│       │       └─ [개]  #  Directory for crawled images. When the image processing is complete, go [preprocessed_data] directory
-│       ├─ model_data
-│       │       ├─ gallery
-│       │       │     └─ gallery_list # Temp directory for gallery images(option) 
-│       │       ├─ query
-│       │       │     └─ query_list  # Temp directory for query image
-│       │       └─ working
-│       │             ├─ dog_breeds.txt  # Image statistics used in training 
-│       │             ├─ result.csv   # List of image softmax by breeds
-│       │             ├─ to_reid.csv   # List of images that have passed Pearson correlation coefficient, region, and date filters
-│       │             ├─ to_web.csv   # List of images sent to the web
-│       │             └─ tmp.h5   # weights for classification model 
-│       └─ preprocessed_data
-│               └─ dog_class ─ image   # Preprocessed image using YOLO-v4
-└─ _src
-     ├─ batch
-     │     ├─ send_email.py     # Check updated DB and send e-mail
-     │     └─ update_data.bat   # Batch file for crawling and Preprocessing 'post' images
-     ├─ data_analysis
-     │     ├─ dog_image_similarity
-     │     │          ├─ copy_image.py # Copy the file from the input path to the output path
-     │     │          ├─ crawling_to_preprocessed.py # After preprocessing, train the model and move the file
-     │     │          ├─ dog_breed_similarity_comparison.py # Image similarity comparison by pearson correlation
-     │     │          ├─ extract_similar_image_path.py # Filtering images through breed classifier
-     │     │          └─ predict_dog_data.py # Prediction by image
-     │     └─ re_id
-     │           └─ code
-     │                ├─ reid_query.py   # Extract query image feature (512 vectors)
-     │                ├─ reid_gallery.py  # Extract gallery image feature (512 vectors)
-     │                ├─ reid_sort.py   # Calculate image similarity using cosine distance and sorting index   
-     │                ├─ train.py   # To train model 
-     │                └─ model.py   # Model structure for train.py
-     │                
-     ├─ data_analysis
-     │     └─ data_collection_zooseyo.py # 'http://www.zooseyo.or.kr/zooseyo_or_kr.html' site data crawling
-     ├─ data_processing
-     │     └─ image_data_download.py # Code for downloading image 
-     │     └─ yolo_v4
-     │            └─  detect.py   # Detect dogs and cats. Crop target image and save 
-     └─ web
-         ├─ static
-         │     └─ assets
-         │           └─ img # Image and Icon for Web Design
-         │     ├─ bootstrap # Bootstrap CSS, JS Files
-         │     ├─ css # CSS files for Web Design
-         │     ├─ js # JavaScript files for Web Design
-         │     └─ images
-         │           ├─ input_image
-         │           └─ uploads # User Query Images
-         ├─ templates
-         │      ├─ find_my_dog_a.html  # Result Page
-         │      └─ index.html   # Main page
-         └─ app.py # Web Application (Calls Models)
-```
-
-## 6. requirement
+## 5. requirement
 ```
 python==3.8
 matplotlib==3.2.2
@@ -111,36 +48,30 @@ scipy==1.4.1
 tensorflow==2.3.0 
 ```
 
-## 7. 프로젝트 진행 과정
+## 6. 프로젝트 진행 과정
 
-- **`200706-200710`**
-  - 아이디어 회의
-- **`200713-200717`**
-  - 아이디어 회의
-  - 팀별 발표(변리사 & 학생 피드백)
-- **`200720-200724`**
-  - 환경 구축
-  - 데이터 수집
-    - [종합 유기견 보호센터](http://www.zooseyo.or.kr/zooseyo_or_kr.html?) : 유기 동물(공고 & 보호 중)
-- **`200727-200731`**
-  - 수집된 데이터 EDA
-- **`200803-200807`**
-  - Data preprocessing code 작성 
-    - File renaming & random shuffle, Cross validation, Image Augmentation 
-  - pet re-identification
-    - [person re identification](https://github.com/waylybaye/Person_reID_baseline_pytorch#dataset--preparation) 응용 
-  - 개 품종 분류 및 결과 EDA
-- **`200810-200814`**
-  - 분류 모델 softmax값을 이용한 cosine 유사도 측정
-  - 임의의 이미지에 대해 공고 이미지와 유사도 측정 후 유사한 이미지 N개 출력
-- **`200817-200821`**
-  - 웹 디자인 구상
-  - Object detection & Image crop하는 code 작성 (Using faster R-CNN)   
-- **`200824-200831`**
-  - 윈도우 작업스케줄러를 이용해 배치파일 적용(데이터 수집, 적재, 모델 학습 자동화)
-  - flow diagram 작성
-  - 웹 페이지 생성(flask, DB 연동)
-  - 분류기와 re-id 연결
-  - Object detection & Image crop(이미지 전처리)에 YOLO-V4 사용
-  - 날짜, 지역 필터링 적용
-  - 이메일 알림 기능 추가
+- **`210104-210108`**
+  - 연구과제 관련 미팅
+  - '신호처리', 'Arc-Fault' study
+- **`210111-210115`**
+  - 'Arc-Fault' 가상 signal 생성
+  - 가상 Arc signal 피드백(Ph.D. & me)
+  - 데이터 종류(Normal, Arc1, Arc2) 당 20개의 데이터 추출 (max, mean, std, max-min-diff)
+- **`210118-210122`**
+  - 'FFT, STFT, WT' study
+  - 'transform'한 signal feature 추출(Spectrum 값 및 변화 특성)
+  - 데이터 feature간의 상관관계 분석 후 VIF를 통한 변수 선택법, PCA 적용
+- **`210125-210129`**
+  - Class 불균형 해소 위한 SMOTE 기법을 통한 Oversampling 적용
+  - SVM 모델 구현 및 평가. 피드백(Ph.D. & me)
+- **`210201-210205`**
+  - Time Series Data 생성 및 Preprocessing
+  - 연구과제 관련 미팅
+- **`210208-210210`**
+  - KNN 알고리즘을 통한 Anomaly Detection 구현
+  - 구현 모델 피드백(Ph.D. & me)
+- **`210216-210219`**
+  - 
+  -   
+- **`210222-210226`**
+  -
