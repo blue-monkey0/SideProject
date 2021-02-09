@@ -26,31 +26,18 @@
 </div>
 
 ## 4. 프로젝트 요약
-- 인터넷에 산재되어 있는 **유기동물 공고 정보**를 `수집` 및 `적재`
-- **Fine-grained Classification**을 통해 생김새를 파악
-- 외견적 특성을 정의할 수 있는 세부 품종 분류를 수행한 후 **품종별 확률값 도출**
-- 도출된 확률값 바탕으로 탐색 대상과 Query Image의 **PCC(Pearson Correlation Coefficient)** 기반 `유사도 계산`, 유사성이 낮은 개체 후보군에서 제외
-- **Metric Learning**을 통해 털의 색, 조합의 유사성을 확인.
-- 작업 스케줄러를 이용해 **파이프라인 자동화**(신규 공고 데이터 수집 및 적재, 모델 학습)
-- 사용자 요청 시 기존 Query 이미지와 비교를 지속 수행, 새로이 유사한 개체가 발견되었을 때 **사용자에게 메일 발송**
+- Arc Generator Test System을 통한 데이터 수집이 아직 이루어지지 않은 관계로 가상의 **Arc-Fault 데이터**를 `생성` 및 `수집`
+- **`Normal`, `Arc1`, `Arc2`** 상태인 데이터 3종 생성
+- 실제 arc generator에서 검출한 신호와 비슷한 조건으로 생성 후 데이터 종류 당 20개의 데이터 추출
+- 도출된 데이터를 바탕으로 **FFT(Fast Fourier Transform)**, **STFT(Short Time Fourier Transform)**, **WT(Wavelet Transform)** 변환 후 `max`, `mean`, `std`, `Frequency`, `Magnitude` 등 데이터 Feature 추출
+- Data Feature 간의 **PCC(Pearson Correlation Coefficient)** 기반 `독립성 검정`, 변수 간의 독립성이 너무 강해 변수 선택법이 아닌 차원 축소 **PCA**로 접근
+- **Principal Component Analysis**으로 차원 축소 후 Class의 불균형 해소 위한 **SMOTE** 기법 사용하여 **`OverSampling`** 진행
+- **SVM(support vector machine)** 으로 Normal, Arc 상태 **분류모델** 학습
+- **Time Series Data** 기반 위험도 예측 모델 개발 위해 `K-NN`, `LSTM` 기법 구현
+- `K-Nearest Neighbor`을 통해 **window size** 만큼 shift하며, 거리를 0~1사이로 정규화. **Threshold**를 설정하여 임계값 이상은 **Anomaly**로 인식. 즉, Arc 신호를 **`Anomaly Detection`** 하여 labeling이 가능.
+- **Time Step**을 주어 3D텐서로 변환 후 `Long short-term memory`모델로 학습 후 안전/위험도 예측
 
-#### 주요 기능
-- **특정 개체 특성 중심 탐색**
-  > 품종 등 메타데이터를 바탕으로 한 단순 검색을 넘어 개체의 시각적 특성을 바탕으로 한 유사성 비교를 수행<br/>
-  공고 데이터의 90%를 차지하는 믹스견 역시 세부적인 특징을 분석해 유사한 개체를 찾아냄
-- **파이프라인 자동화**
-  > 주기적으로 신규 등록 개체 수집 및 분석하여 기존 Query 개체와 비교<br/>
-  유사도가 높은 개체 발견될 경우 메일 발송
-- **Fine-Grained Classification**
-  > 세부적인 품종의 외견 정보를 바탕으로 분류를 수행<br/>
-  여러 품종의 특성을 가진 믹스견을 고려해, 외형적으로 추측되는 각 품종의 확률값을 도출
-- **Metric Learning**
-  > Query 이미지와 유사한 색상(단일 컬러 및 여러 색의 혼합)인 개체를 찾기 위해 특성을 추출한 후, Similarity를 계산<br/>
-  Similarity 계산을 위해 Metric Learning을 적용
-- **Stacking ensemble**
-  > Fine-Grained Classification으로 각 품종 확률값 기준 필터링<br/>
-  필터링된 이미지를 Metric Learning을 통해 털의 색, 조합의 유사성 확인<br/>
-  이목구비 형태의 유사성과 털의 색, 무늬 등 패턴의 유사성을 모두 확인하기 위해 두 모델을 연결
+
 
 ## 5. System
 ```Python
@@ -117,27 +104,11 @@ $ main_project
 ## 6. requirement
 ```
 python==3.8
-pytorch==1.6.0 (window, conda, cuda==10.1) conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
-absl-py==0.10.0
-easydict==1.9
-Flask==1.1.2
-Flask-Dropzone==1.5.4
-Flask-SQLAlchemy==2.4.4
 matplotlib==3.2.2
-numba==0.50.1
 numpy==1.18.5
-opencv-python==4.4.0.42
 pandas==1.0.5
-pillow==7.2.0
-pretrainedmodels==0.7.4
-pymysql==0.9.2
 scipy==1.4.1
 tensorflow==2.3.0 
-torchvision==0.7.0 
-tqdm==4.47.0
-urllib3==1.25.9
-werkzeug==1.0.1
-yaml==0.2.5
 ```
 
 ## 7. 프로젝트 진행 과정
