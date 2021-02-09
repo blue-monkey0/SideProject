@@ -22,7 +22,7 @@
 
 ## 3. 시스템 사용 Tool
 <div>
-  <img width="700" src="https://github.com/Bigjob-team-12/Project/blob/master/_img/system.png">
+  ![ppy](https://user-images.githubusercontent.com/48666867/107304913-51e51000-6ac5-11eb-98fd-b0c4e672aae5.PNG)
 </div>
 
 ## 4. 프로젝트 요약
