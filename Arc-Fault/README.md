@@ -22,7 +22,7 @@
 
 ## 3. 시스템 사용 Tool
 <div>
-  <img width="500" src="https://github.com/GeonKimdcu/SideProject/blob/main/Arc-Fault/_img/ppy.PNG">
+  <img width="200" src="https://github.com/GeonKimdcu/SideProject/blob/main/Arc-Fault/_img/ppy.PNG">
 </div>
 
 ## 4. 프로젝트 요약
