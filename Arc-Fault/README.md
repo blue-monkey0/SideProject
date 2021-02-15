@@ -40,12 +40,12 @@
 
 ## 5. requirement
 ```
-python==3.8
+python==3.7
 matplotlib==3.2.2
 numpy==1.18.5
 pandas==1.0.5
 scipy==1.4.1
-tensorflow==2.3.0 
+tensorflow==2.4.0 
 ```
 
 ## 6. 프로젝트 진행 과정
