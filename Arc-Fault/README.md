@@ -79,4 +79,4 @@ PyWavelet==1.1.1
   - peak 값을 통해 window 별 ratio로 값 생성
   - threshold를 설정 후, 주어진 신호에서 Arc-Fault를 검출해 단계별 'safety / caution / warning' 상태 출력
 - **`210222-210226`**
-  - yet
+  - 코드 주석 정리 및 코드 상세 내용 문서화
