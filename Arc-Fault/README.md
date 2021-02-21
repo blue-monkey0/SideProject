@@ -9,16 +9,16 @@
 - `신호처리`와 같은 새로운 전문 지식에 흥미를 가짐.
 - **본 연구 과제에서 개발과 관련된 내용을 제외한 자세한 내용은 밝힐 수 없음.**
 
-| **화재 위험도 분류** | **화재 위험도 예측** |
+| **화재 위험도 분류** | **화재 위험도 단계별 분류** |
 | :-----------: | :-----------: |
-| SVM | LSTM |
+| SVM | Wavelet Transform |
 
 - 화재 위험도 분류 **`Normal` / `Arc` 상태를 분류하여 화재 위험도를 알려줌.**
-- 화재 위험도 예측 **`Time Step`을 기준으로 다음 신호의 `Normal` / `Arc` 상태를 예측하여 화재 위험도를 예측해줌.**
+- 화재 위험도 단계별 분류 **`WP transform`을 통해 `Arc-Fault`를 탐지하여 화재 위험도를 실시간으로 출력해줌.**
 
 ## 2. 역할 :two_men_holding_hands:
 > **김건**
-- 모델 학습 데이터 수집, 데이터 전처리, 분류 모델 구현 및 평가, 시계열 예측 모델 구현 및 평가
+- 모델 학습 데이터 수집, 데이터 전처리, 분류 모델 구현 및 평가, Arc-Fault 탐지 화재 위험도 안내 시스템 개발
 
 ## 3. 시스템 사용 Tool
 <div>
@@ -34,8 +34,9 @@
 - **Principal Component Analysis**으로 차원 축소 후 Class의 불균형 해소 위한 **SMOTE** 기법 사용하여 **`OverSampling`** 진행
 - **SVM(support vector machine)** 으로 Normal, Arc 상태 **분류모델** 학습
 - **Time Series Data** 기반 위험도 예측 모델 개발 위해 `K-NN`, `LSTM` 기법 구현
-- `K-Nearest Neighbor`을 통해 **window size** 만큼 shift하며, 거리를 0~1사이로 정규화. **Threshold**를 설정하여 임계값 이상은 **Anomaly**로 인식. 즉, Arc 신호를 **`Anomaly Detection`** 하여 labeling이 가능.
-- **Time Step**을 주어 3D텐서로 변환 후 `Long short-term memory`모델로 학습 후 안전/위험도 예측
+- `K-Nearest Neighbor`을 통해 **window size** 만큼 shift하며, 거리를 0~1사이로 정규화. **Threshold**를 설정하여 임계값 이상은 **Anomaly**로 인식. 즉, Arc 신호를 **`Anomaly Detection`** 하여 labeling이 가능
+- `Wavelet Packet Transform`을 통해 Arc state를 Anomaly Detection 함. 단계별 `threshold`를 할당하여 임계값 초과 시 count값을 누적 후 이를 토대로 실시간 단계별 상태 출력
+- 관련 논문) H.Zhang, "Arc Fault Signatures Detection on Aircraft Wiring System", IEEE, 2006, pp. 5548-5552
 
 
 ## 5. requirement
@@ -45,10 +46,12 @@ matplotlib==3.2.2
 numpy==1.18.5
 pandas==1.0.5
 scipy==1.4.1
-tensorflow==2.4.0 
+sklearn==0.0
+statsmodels==0.12.2
+PyWavelet==1.1.1
 ```
 
-## 6. 프로젝트 진행 과정
+## 6. 프로젝트 진행 과정 :bulb:
 
 - **`210104-210108`**
   - 연구과제 관련 미팅
@@ -71,6 +74,9 @@ tensorflow==2.4.0
   - KNN 알고리즘을 통한 Anomaly Detection 구현
   - 구현 모델 피드백(Ph.D. & me)
 - **`210216-210219`**
-  - yet
+  - Wavelet Packet Transform 관련 논문 정리
+  - WPT를 사용해 고역통과필터로 분해된 주파수 성분들로 window 별 maximum peak value추출
+  - peak 값을 통해 window 별 ratio로 값 생성
+  - threshold를 설정 후, 주어진 신호에서 Arc-Fault를 검출해 단계별 'safety / caution / warning' 상태 출력
 - **`210222-210226`**
   - yet
