@@ -1,0 +1,39 @@
+### 가상환경 생성
+>> conda create -n keras-yolo3 python=3.6
+>> conda activate keras-yolo3
+
+
+### CUDA/CUDNN 설치
+>> conda install -c anaconda cudatoolkit=9.0
+>> conda install -c anaconda cudnn=7.6.0
+
+
+### Tensorflow/Keras 설치
+>> conda install -c anaconda tensorflow-gpu=1.12.0
+>> conda install -c anaconda keras=2.2.4
+
+
+### 기타 라이브러리 설치
+>> conda install jupyter
+>> conda install matplotlib
+>> conda install pandas
+>> conda install -c conda-forge opencv
+
+
+### keras-yolo3 GitHub 다운로드
+>> git clone https://github.com/qqwweee/keras-yolo3
+
+
+### 커스템 데이터셋 다운로드
+Microcontroller datasets 이용¶
+https://www.kaggle.com/tannergi/microcontroller-detection
+==> keras-yolo3 폴더 밑에 image_data 폴더 생성 -> 여기에 압축파일 unzip
+
+
+### 실행
+>> ipython notebook &
+ --> custom-train-1.ipynb 실행
+
+
+
+

@@ -1,0 +1,142 @@
+./image_data/Microcontroller-Detection/train/IMG_20190104_165200.jpg 288,220,696,559,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164611.jpg 419,141,617,268,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_103110.jpg 328,46,651,363,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104027.jpg 315,221,560,400,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164430.jpg 334,216,513,318,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_165119.jpg 256,209,612,419,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164409.jpg 250,202,572,420,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_103429.jpg 322,193,606,363,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_163823.jpg 3,59,775,434,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104317.jpg 317,225,477,374,2 352,314,772,563,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102425.jpg 381,196,588,334,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102801.jpg 89,97,721,538,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104144.jpg 138,148,490,456,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164220.jpg 295,196,701,384,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_163943.jpg 103,63,394,464,3 430,135,720,367,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_104303.jpg 175,301,351,459,0 383,213,770,540,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103622.jpg 110,66,473,543,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104004.jpg 308,160,553,378,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_103629.jpg 271,351,405,419,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_102201.jpg 193,190,632,463,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102041.jpg 324,151,574,391,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104336.jpg 378,161,519,285,2 370,259,693,426,3 267,433,449,531,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164622.jpg 158,247,328,430,1 569,121,691,267,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_163815.jpg 254,116,637,432,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164259.jpg 274,146,604,340,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_163834.jpg 53,68,704,363,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164017.jpg 241,1,543,364,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_102033.jpg 240,307,419,411,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_104024.jpg 320,221,551,328,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164604.jpg 322,280,618,469,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102516.jpg 439,222,593,325,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164422.jpg 259,298,421,376,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164200.jpg 337,240,696,448,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164227.jpg 331,197,768,382,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_103113.jpg 337,217,524,330,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_102155.jpg 383,226,511,330,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164233.jpg 237,168,704,403,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_163842.jpg 82,103,677,353,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164134.jpg 324,222,484,337,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164013.jpg 181,139,604,599,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103326.jpg 240,130,590,329,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_103611.jpg 269,186,474,293,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164125.jpg 356,225,514,356,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164312.jpg 337,175,577,427,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_104234.jpg 123,241,375,326,0 243,340,508,480,1 433,202,698,352,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_163849.jpg 215,118,704,375,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_103835.jpg 216,162,513,471,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_103805.jpg 274,196,517,366,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_101903.jpg 290,239,514,387,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_101826.jpg 317,265,556,342,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_102520.jpg 414,261,555,352,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164153.jpg 211,146,706,508,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164205.jpg 379,116,635,299,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_102308.jpg 332,274,509,401,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164121.jpg 316,127,642,369,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_103227.jpg 267,150,612,372,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104139.jpg 1,45,773,579,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164415.jpg 294,179,587,359,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_104256.jpg 158,224,418,321,0 488,266,702,434,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_102210.jpg 369,297,516,384,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_165139.jpg 306,300,457,464,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_102552.jpg 390,203,504,300,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_103331.jpg 231,123,619,398,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_163809.jpg 186,187,710,478,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164440.jpg 328,135,523,381,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_103121.jpg 378,268,548,393,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_102048.jpg 457,198,553,287,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_102511.jpg 394,175,600,413,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164548.jpg 352,329,473,416,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_103117.jpg 370,156,571,300,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_163951.jpg 4,29,449,467,3 358,336,656,537,2 519,21,751,247,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_101855.jpg 398,243,592,382,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_163949.jpg 62,163,352,393,1 551,198,711,453,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_104332.jpg 275,216,452,309,0 395,383,602,497,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164532.jpg 349,73,551,267,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_103634.jpg 393,342,509,411,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164523.jpg 317,184,631,403,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164615.jpg 334,95,601,276,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104309.jpg 287,304,459,399,1 384,390,541,493,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_103329.jpg 373,247,680,426,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164630.jpg 249,432,449,571,3 325,96,427,197,1 561,19,640,108,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164010.jpg 193,9,516,461,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164240.jpg 74,118,785,491,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102434.jpg 551,228,643,323,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164635.jpg 272,491,389,589,2 304,308,468,415,3 405,55,485,141,1 606,24,658,99,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164130.jpg 319,192,622,401,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_163855.jpg 279,130,738,345,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_103012.jpg 63,140,695,426,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104001.jpg 186,121,549,366,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102319.jpg 364,255,477,337,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_163812.jpg 200,139,583,503,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_165204.jpg 360,298,562,474,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_102313.jpg 398,276,554,392,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_104356.jpg 37,329,287,489,2 251,326,641,584,3 635,263,743,379,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_163915.jpg 255,97,695,288,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164252.jpg 210,195,623,534,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164540.jpg 288,221,495,317,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_102020.jpg 332,259,538,357,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164528.jpg 248,171,670,470,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164405.jpg 206,74,701,452,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103234.jpg 239,227,560,455,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_102420.jpg 293,325,389,456,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_104344.jpg 333,268,552,392,1 274,405,548,558,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_104241.jpg 403,119,719,307,2 102,290,609,595,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103427.jpg 375,240,698,499,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_104228.jpg 358,176,659,304,0 343,349,687,474,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_103324.jpg 314,205,596,329,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_103434.jpg 92,39,595,571,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103009.jpg 203,210,561,401,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_103014.jpg 254,229,483,395,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_103231.jpg 299,189,587,365,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_165108.jpg 228,328,567,464,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_102506.jpg 492,207,578,325,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_102547.jpg 257,188,512,293,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103828.jpg 100,129,590,511,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_163956.jpg 163,31,426,237,1 578,80,727,297,0 70,389,387,571,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_101915.jpg 194,200,669,531,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102544.jpg 425,266,556,352,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164248.jpg 196,133,604,325,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_102206.jpg 333,277,446,377,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_103424.jpg 298,121,632,386,1
+./image_data/Microcontroller-Detection/train/IMG_20181228_104413.jpg 201,279,397,414,2 412,261,619,422,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_165104.jpg 232,167,654,528,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103813.jpg 159,209,496,444,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164023.jpg 374,1,529,263,0
+./image_data/Microcontroller-Detection/train/IMG_20190104_164157.jpg 261,301,545,490,3
+./image_data/Microcontroller-Detection/train/IMG_20190104_164559.jpg 463,188,575,337,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_164434.jpg 280,232,590,435,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_104213.jpg 363,147,485,297,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_102317.jpg 389,271,543,398,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_163804.jpg 205,56,749,548,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_103007.jpg 280,191,675,382,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_164400.jpg 374,45,546,346,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_104248.jpg 75,289,302,445,1 340,179,628,443,3
+./image_data/Microcontroller-Detection/train/IMG_20181228_102557.jpg 278,206,388,301,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_165129.jpg 240,255,530,418,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_165146.jpg 156,226,453,416,2
+./image_data/Microcontroller-Detection/train/IMG_20190104_163909.jpg 169,126,758,350,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_103229.jpg 316,222,576,368,2
+./image_data/Microcontroller-Detection/train/IMG_20181228_102013.jpg 383,336,591,444,0
+./image_data/Microcontroller-Detection/train/IMG_20181228_104153.jpg 351,321,686,485,1
+./image_data/Microcontroller-Detection/train/IMG_20190104_163902.jpg 211,119,674,341,0
