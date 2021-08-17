@@ -11,49 +11,36 @@
 
 ## 2. 역할 :two_men_holding_hands:
 > **김건**
-- image 라벨링, 파일명 변환 코드 구현, jpg 확장자 png로 변환 코드 구현, 
+- image 라벨링, 파일명 변환 코드 구현, jpg 확장자 png로 변환 코드 구현
+
+> **배OO(Supervised.)**
+- keras-yolo 오픈 소스 선택 및 공유, 학습 모델 구현
 
 > **박OO**
-- 분석 방향 설계, 데이터 전처리, LSTM 모델 구현
+- image 라벨링, json, xml 파일 변환 코드 구현
 
-> **박OO, 석OO, 한OO**
-- 분석 방향 설계, 추가 데이터 수집, PPT 작성
+> **권OO, 한OO**
+- 데이터 수집, image 라벨링
 
 ## 3. 시스템 사용 Tool
 <div>
   <img width="200" src="https://github.com/GeonKimdcu/SideProject/blob/main/Arc-Fault/_img/ppy.PNG">
 </div>
 
-## 4. 변수 소개
-- GAME: 경기 수
-- GDAY_DS: 경기 일자
-- T_ID: 팀 코드
-- VS_T_ID: 상대팀 코드
-- AB: 투구 수
-- RUN: 실점
-- HIT: 안타 개수
-- INN2: 이닝 * 3
-- R: 득점
-- ER: 자책점
-
-## 5. 프로젝트 요약
-- R을 사용하여 타율, 방어율, 승률에 연관성이 있는 데이터 수집 후 T_ID를 기준으로 데이터를 정렬(팀과 팀간의 상성을 확인하기 위해)
-- T_ID로 분류한 데이터를 팀 및 연도별 파생 변수 생성
-- 데이터 분류 후 불필요한 데이터 삭제
-- 144경기를 4개 구간으로 나누어줌. (연도 별 시간에 따른 팀 성적에 패턴을 보고 2020년의 경기를 예측하려 하였으나, 코로나로 인해 경기가 지연되면서 기존의 데이터와 2020년 데이터간의 날짜의 상관성이 사라짐. 따라서 경기 수를 기준으로 분석하고자 함 => **LSTM** 기법 사용한 이유)
-- LSTM 모델 생성 및 컴파일 후 팀 별 타율, 방어율, 그리고 득실점을 예측함. 예측되어진 득실점을 이용해 피타고리안 승률 계산식에 대입해 승률 예측
-
+## 4. 프로젝트 요약
+- `labelImg` 오픈소스 툴 다운로드하여 생활폐기물을 분류기준에 맞게 라벨링하였음.(Ref. https://github.com/tzutalin/labelImg)
+- 클래스는 `paper`, `paperpack`, `can`, `glassbottle`, `PET`, `plasticware`, `plastic bag`으로 분류하였음.
+- 대회 기간 내 최대한 데이터 수를 늘리기 위해 노력하였음. 
+- 부족한 class의 사진은 각도를 틀거나 뒤집어 image 수를 늘려 class별로 균등하게 해주었음.
 
 ## 6. requirement
 ```
 python==3.7
-matplotlib==3.2.2
 numpy==1.18.5
 pandas==1.0.5
 scipy==1.4.1
 sklearn==0.0
 tensorflow==2.3.1
-R==4.1.1
 ```
 
 ## 7. 프로젝트 진행 과정 :bulb:
