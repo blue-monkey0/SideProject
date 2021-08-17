@@ -58,8 +58,7 @@ numpy==1.18.5
 pandas==1.0.5
 scipy==1.4.1
 sklearn==0.0
-statsmodels==0.12.2
-PyWavelet==1.1.1
+tensorflow==2.3.1
 ```
 
 ## 7. 프로젝트 진행 과정 :bulb:
