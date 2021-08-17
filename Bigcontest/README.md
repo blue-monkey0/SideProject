@@ -10,7 +10,7 @@
 
 | **방어율, 타율 예측** | **승률 예측** |
 | :-----------: | :-----------: |
-| LSTM | 피타고리안 승률 계산식 [x = ((득점 + 실점) / 경기 수) ^ 0.287] , [승률(PV) = 득점 ^x / (득점 ^x + 실점 ^x)] |
+| LSTM | 피타고리안 승률 계산식 |
 
 - 승률 계산식: `x = ((득점 + 실점) / 경기 수) ^ 0.287` , `승률(PV) = 득점 ^x / (득점 ^x + 실점 ^x)`
 - 데이터는 스포츠투아이에서 2016~2020년 상반기까지 데이터를 제공해주었음.
@@ -30,21 +30,27 @@
   <img width="200" src="https://github.com/GeonKimdcu/SideProject/blob/main/Arc-Fault/_img/ppy.PNG">
 </div>
 
-## 4. 프로젝트 요약
-- Arc Generator Test System을 통한 데이터 수집이 아직 이루어지지 않은 관계로 가상의 **Arc-Fault 데이터**를 `생성` 및 `수집`
-- **`Normal`, `Arc1`, `Arc2`** 상태인 데이터 3종 생성
-- 실제 arc generator에서 검출한 신호와 비슷한 조건으로 생성 후 데이터 종류 당 20개의 데이터 추출
-- 도출된 데이터를 바탕으로 **FFT(Fast Fourier Transform)**, **STFT(Short Time Fourier Transform)**, **WT(Wavelet Transform)** 변환 후 `max`, `mean`, `std`, `Frequency`, `Magnitude` 등 데이터 Feature 추출
-- Data Feature 간의 **PCC(Pearson Correlation Coefficient)** 기반 `독립성 검정`, 변수 간의 독립성이 너무 강해 변수 선택법이 아닌 차원 축소 **PCA**로 접근
-- **Principal Component Analysis**으로 차원 축소 후 Class의 불균형 해소 위한 **SMOTE** 기법 사용하여 **`OverSampling`** 진행
-- **SVM(support vector machine)** 으로 Normal, Arc 상태 **분류모델** 학습
-- **Time Series Data** 기반 위험도 예측 모델 개발 위해 `K-NN`, `LSTM` 기법 구현
-- `K-Nearest Neighbor`을 통해 **window size** 만큼 shift하며, 거리를 0~1사이로 정규화. **Threshold**를 설정하여 임계값 이상은 **Anomaly**로 인식. 즉, Arc 신호를 **`Anomaly Detection`** 하여 labeling이 가능
-- `Wavelet Packet Transform`을 통해 Arc state를 Anomaly Detection 함. 단계별 `threshold`를 할당하여 임계값 초과 시 count값을 누적 후 이를 토대로 실시간 단계별 상태 출력
-- 관련 논문) H.Zhang, "Arc Fault Signatures Detection on Aircraft Wiring System", IEEE, 2006, pp. 5548-5552
+## 4. 변수 소개
+- GAME: 경기 수
+- GDAY_DS: 경기 일자
+- T_ID: 팀 코드
+- VS_T_ID: 상대팀 코드
+- AB: 투구 수
+- RUN: 실점
+- HIT: 안타 개수
+- INN2: 이닝 * 3
+- R: 득점
+- ER: 자책점
+
+## 5. 프로젝트 요약
+- R을 사용하여 타율, 방어율, 승률에 연관성이 있는 데이터 수집 후 T_ID를 기준으로 데이터를 정렬(팀과 팀간의 상성을 확인하기 위해)
+- T_ID로 분류한 데이터를 팀 및 연도별 파생 변수 생성
+- 데이터 분류 후 불필요한 데이터 삭제
+- 144경기를 4개 구간으로 나누어줌. (연도 별 시간에 따른 팀 성적에 패턴을 보고 2020년의 경기를 예측하려 하였으나, 코로나로 인해 경기가 지연되면서 기존의 데이터와 2020년 데이터간의 날짜의 상관성이 사라짐. 따라서 경기 수를 기준으로 분석하고자 함 => **LSTM** 기법 사용한 이유)
+- LSTM 모델 생성 및 컴파일 후 팀 별 타율, 방어율, 그리고 득실점을 예측함. 예측되어진 득실점을 이용해 피타고리안 승률 계산식에 대입해 승률 예측
 
 
-## 5. requirement
+## 6. requirement
 ```
 python==3.7
 matplotlib==3.2.2
@@ -56,7 +62,7 @@ statsmodels==0.12.2
 PyWavelet==1.1.1
 ```
 
-## 6. 프로젝트 진행 과정 :bulb:
+## 7. 프로젝트 진행 과정 :bulb:
 
 - **`210104-210108`**
   - 연구과제 관련 미팅
