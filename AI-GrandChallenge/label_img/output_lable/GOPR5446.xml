@@ -1,0 +1,26 @@
+<annotation>
+	<folder>input_images</folder>
+	<filename>GOPR5446.jpg</filename>
+	<path>D:\Deeplearining\labelImg\input_images\GOPR5446.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>c_3</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>511</xmin>
+			<ymin>381</ymin>
+			<xmax>783</xmax>
+			<ymax>481</ymax>
+		</bndbox>
+	</object>
+</annotation>
