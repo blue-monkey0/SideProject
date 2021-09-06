@@ -46,34 +46,34 @@
 ![image](https://user-images.githubusercontent.com/48666867/132148678-247ac747-3772-4760-8b9d-91ece456eefc.png)
 실험에 쓰일 인스턴스에서 나온 CPU 개수를 ‘threads=N’에 넣는다. 이를 CPU 개수가 다른 인스턴스 타입 별로 반복하여 측정해줌.
 - option 값
-(a) --threads 옵션 값은 스레드 수
-(b) --events는 총 요청 수를 제한
-(c) --time은 전체 실행 시간제한(초)이고 0은 시간 관계없이 events 수 만큼 요청 실행
-(d) --cpu-max-prime은 소수(prime number)를 이용한 연산으로 값을 20000으로 설정
+(a) --threads 옵션 값은 스레드 수 <br>
+(b) --events는 총 요청 수를 제한 <br>
+(c) --time은 전체 실행 시간제한(초)이고 0은 시간 관계없이 events 수 만큼 요청 실행<br>
+(d) --cpu-max-prime은 소수(prime number)를 이용한 연산으로 값을 20000으로 설정<br>
  
 
 (3) t2.micro(single core) Instance Type CPU test
 ![image](https://user-images.githubusercontent.com/48666867/132148719-4d40ea15-e54b-441f-9b65-2424b452ecda.png)
-CPU Thread : 1
-CPU Speed(연산 처리 속도): 332.20
-Total Time(연산 소요 시간): 30.0998s
-Latency(지연 시간): 3.01
+CPU Thread : 1<br>
+CPU Speed(연산 처리 속도): 332.20<br>
+Total Time(연산 소요 시간): 30.0998s<br>
+Latency(지연 시간): 3.01<br>
  
 
 (4) t2.medium(dual core) Instance Type CPU test
 ![image](https://user-images.githubusercontent.com/48666867/132148747-e4e6e6f2-bf4a-4726-ba48-f470391aea87.png)
-CPU Thread: 2
-CPU Speed(연산 처리 속도): 706.31
-Total Time(연산 소요 시간): 14.1540s
-Latency(지연 시간): 2.83
+CPU Thread: 2<br>
+CPU Speed(연산 처리 속도): 706.31<br>
+Total Time(연산 소요 시간): 14.1540s<br>
+Latency(지연 시간): 2.83<br>
  
 
 (5) t2.xlarge(quad core) Instance Type CPU test
 ![image](https://user-images.githubusercontent.com/48666867/132148760-7be6d658-a88c-46c3-b1ca-9be520063069.png)
-CPU Thread: 4
-CPU Speed(연산 처리 속도): 1414.44
-Total Time(연산 소요 시간): 7.0679s
-Latency(지연 시간): 2.83
+CPU Thread: 4<br>
+CPU Speed(연산 처리 속도): 1414.44<br>
+Total Time(연산 소요 시간): 7.0679s<br>
+Latency(지연 시간): 2.83<br>
  
  
  
