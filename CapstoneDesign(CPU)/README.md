@@ -113,9 +113,30 @@ Latency(지연 시간): 2.97<br>
 ## 7. 실험 후 분석 과정 :bulb:
 - 각 실험 결과 값들의 신뢰성을 높이기 위해 반복 실험하여 얻은 표본 30개를 Excel로 저장
 - R Studio 프로그램으로 표본을 가지고 통계적 검정 시행
-  - t2.micro, t2.medium와 t2.xlarge를 그룹으로 묶고 난 뒤에 CPU Speed, Total Time 그리고 Latency값의 평균값이 서로 유의한 차이를 보이는지 일원배치 분산분석(One-way Anova) 기법을 사용하여 신뢰도 검정을 수행.
-    - Instance Type 별 CPU Speed 평균값이 차이가 있는지 검정
-    - ![image](https://user-images.githubusercontent.com/48666867/132149421-0e6d0da0-34d2-4c0d-9f2a-b964014f5531.png)
+- t2.micro, t2.medium와 t2.xlarge를 그룹으로 묶고 난 뒤에 CPU Speed, Total Time 그리고 Latency값의 평균값이 서로 유의한 차이를 보이는지 일원배치 분산분석(One-way Anova) 기법을 사용하여 신뢰도 검정을 수행.
+  - Instance Type 별 CPU Speed 평균값이 차이가 있는지 검정
+  - ![image](https://user-images.githubusercontent.com/48666867/132149421-0e6d0da0-34d2-4c0d-9f2a-b964014f5531.png)
+  - Instance Type 별 Total Time 평균값이 차이가 있는지 검정
+  - ![image](https://user-images.githubusercontent.com/48666867/132149544-18314213-fe4c-4695-a923-156376898bdc.png)
+  - Instance Type 별 Latency 평균값이 차이가 있는지 검정
+  - ![image](https://user-images.githubusercontent.com/48666867/132149575-77f0a8ad-7ab7-490a-9805-b0143aedd93c.png)
+- Thread를 그룹으로 묶고 난 뒤에 CPU Speed, Total Time 그리고 Latency값의 평균값이 서로 유의한 차이를 보이는지 일원배치 분산분석(One-way Anova) 기법을 사용하여 신뢰도 검정을 하였다.
+  - Thread 개수 별로 CPU Speed 평균값이 차이가 있는지 검정
+  - ![image](https://user-images.githubusercontent.com/48666867/132149644-9ccde488-7aa5-4a94-a847-30bbdbbd4421.png)
+  - Thread 개수 별로 Total Time 평균값이 차이가 있는지 검정
+  - ![image](https://user-images.githubusercontent.com/48666867/132149665-ac5626d8-3fa3-448e-a615-aa5e170c8df9.png)
+  - Thread 개수 별로 Latency 평균값이 차이가 있는지 검정
+  - ![image](https://user-images.githubusercontent.com/48666867/132149688-d2d7359c-0b4a-4159-b308-ca9afc54cc32.png)
+
+## 8. 실험 결과
+아래 표는 AWS Instance Type 별로 sysbench 환경에서 CPU 성능이 측정된 결과임.
+
+
+
+
+
+
+
 
 
 
