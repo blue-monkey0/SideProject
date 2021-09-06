@@ -19,7 +19,7 @@
 - 가상 인스턴스 생성, 가상 자원 성능 측정 후 데이터 수집, 통계적 검정
 
 ## 3. 시스템 사용 Tool
-1. sysbench
+1. sysbench <br>
 소개: 인텐시브한 로드에서 데이터베이스를 실행하는 시스템에 필요한 운영체제를 평가하는 모듈화된 크로스 플랫폼 및 멀티 스레드 벤치마크 툴
 - 많은 레퍼런스를 보유하고 있어 성능 진단에 유용하게 사용됨.
 - 데이터베이스를 설치하지 않고도 복잡한 설정을 하지 않고도 시스템 성능을 분석할 수 있음.
@@ -29,12 +29,12 @@
 - 가상 인스턴스 생성
 
 ## 4. CPU 성능측정 수행을 위한 시나리오 선정
-(1) 1차 실험
-주제: AWS Instance 유형 별로 CPU 개수에 차이를 두어 비례 혹은 반비례하게 CPU 성능(CPU Speed, Total Time, Latency)이 측정되는지 증명하고자 함.
-사용할 인스턴스 유형: t2.micro(single core), t2.medium(dual core), t2.xlarge(quad core)
+(1) 1차 실험 <br>
+주제: AWS Instance 유형 별로 CPU 개수에 차이를 두어 비례 혹은 반비례하게 CPU 성능(CPU Speed, Total Time, Latency)이 측정되는지 증명하고자 함. <br>
+사용할 인스턴스 유형: t2.micro(single core), t2.medium(dual core), t2.xlarge(quad core)<br>
  
-(2) 2차 실험
-주제: AWS Instance 하나의 타입(CPU 개수 동일)에서 스레드 개수에 차이를 두어 비례 혹은 반비례하게 CPU 성능(CPU Speed, Total Time, Latency)이 측정되는지 증명하고자 함.
+(2) 2차 실험<br>
+주제: AWS Instance 하나의 타입(CPU 개수 동일)에서 스레드 개수에 차이를 두어 비례 혹은 반비례하게 CPU 성능(CPU Speed, Total Time, Latency)이 측정되는지 증명하고자 함.<br>
 사용할 인스턴스 유형: t2.xlarge(quad core)
 
 ## 5. 1차 실험 진행
