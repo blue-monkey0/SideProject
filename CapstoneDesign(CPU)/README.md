@@ -130,6 +130,7 @@ Latency(지연 시간): 2.97<br>
 
 ## 8. 실험 결과
 아래 표는 AWS Instance Type 별로 sysbench 환경에서 CPU 성능이 측정된 결과임.
+<img width="740" alt="스크린샷 2021-09-06 오전 10 54 37" src="https://user-images.githubusercontent.com/48666867/132149803-096fc0d5-6c1d-4b42-93de-cbcee5613f89.png">
 
 
 
