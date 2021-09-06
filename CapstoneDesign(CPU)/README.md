@@ -74,10 +74,41 @@ CPU Thread: 4<br>
 CPU Speed(연산 처리 속도): 1414.44<br>
 Total Time(연산 소요 시간): 7.0679s<br>
 Latency(지연 시간): 2.83<br>
- 
- 
- 
- 
+
+## 6. 2차 실험 진행
+(1) 사용하는 인스턴스의 CPU 개수 확인
+![image](https://user-images.githubusercontent.com/48666867/132149000-28b9d9ad-88dd-45ce-b8f3-0e22d3a842b3.png)
+현재 사용한 인스턴스 타입은 t2.xlarge(quad core)이므로 CPU 개수가 4개인 것을 확인할 수 있음.
+
+(2) thread = 1 CPU test
+![image](https://user-images.githubusercontent.com/48666867/132149029-85068457-5a76-4008-bfea-7418839381ca.png)
+CPU Thread: 1 <br
+CPU Speed(연산 처리 속도): 337.48<br>
+Total Time(연산 소요 시간): 29.6293s<br>
+Latency(지연 시간): 2.96<br>
+
+(3) thread = 2 CPU test
+![image](https://user-images.githubusercontent.com/48666867/132149080-86bb357d-8277-4461-a189-38001e8be074.png)
+CPU Speed(연산 처리 속도): 674.92<br>
+Total Time(연산 소요 시간): 14.8145s<br>
+Latency(지연 시간): 2.96<br>
+
+(4) thread = 3 CPU test
+![image](https://user-images.githubusercontent.com/48666867/132149123-f68956e8-8efd-4093-9d51-33ec59431019.png)
+CPU Thread: 3<br>
+CPU Speed(연산 처리 속도): 1012.38<br>
+Total Time(연산 소요 시간): 9.8756s<br>
+Latency(지연 시간): 2.96<br>
+
+(5) thread = 4 CPU test
+![image](https://user-images.githubusercontent.com/48666867/132149162-77293c8b-1d8a-4e5d-9498-bd993ae44185.png)
+CPU Thread: 4<br>
+CPU Speed(연산 처리 속도): 1346.76<br>
+Total Time(연산 소요 시간): 7.4232s<br>
+Latency(지연 시간): 2.97<br>
+
+## 7. 실험 후 분석 과정
+
 
 
 
