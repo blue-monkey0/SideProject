@@ -115,50 +115,21 @@ Latency(지연 시간): 2.97<br>
 - R Studio 프로그램으로 표본을 가지고 통계적 검정 시행
 - t2.micro, t2.medium와 t2.xlarge를 그룹으로 묶고 난 뒤에 CPU Speed, Total Time 그리고 Latency값의 평균값이 서로 유의한 차이를 보이는지 일원배치 분산분석(One-way Anova) 기법을 사용하여 신뢰도 검정을 수행.
   - Instance Type 별 CPU Speed 평균값이 차이가 있는지 검정
-  - ![image](https://user-images.githubusercontent.com/48666867/132149421-0e6d0da0-34d2-4c0d-9f2a-b964014f5531.png)
   - Instance Type 별 Total Time 평균값이 차이가 있는지 검정
-  - ![image](https://user-images.githubusercontent.com/48666867/132149544-18314213-fe4c-4695-a923-156376898bdc.png)
   - Instance Type 별 Latency 평균값이 차이가 있는지 검정
-  - ![image](https://user-images.githubusercontent.com/48666867/132149575-77f0a8ad-7ab7-490a-9805-b0143aedd93c.png)
 - Thread를 그룹으로 묶고 난 뒤에 CPU Speed, Total Time 그리고 Latency값의 평균값이 서로 유의한 차이를 보이는지 일원배치 분산분석(One-way Anova) 기법을 사용하여 신뢰도 검정을 하였다.
   - Thread 개수 별로 CPU Speed 평균값이 차이가 있는지 검정
-  - ![image](https://user-images.githubusercontent.com/48666867/132149644-9ccde488-7aa5-4a94-a847-30bbdbbd4421.png)
   - Thread 개수 별로 Total Time 평균값이 차이가 있는지 검정
-  - ![image](https://user-images.githubusercontent.com/48666867/132149665-ac5626d8-3fa3-448e-a615-aa5e170c8df9.png)
   - Thread 개수 별로 Latency 평균값이 차이가 있는지 검정
-  - ![image](https://user-images.githubusercontent.com/48666867/132149688-d2d7359c-0b4a-4159-b308-ca9afc54cc32.png)
 
 ## 8. 실험 결과
-아래 표는 AWS Instance Type 별로 sysbench 환경에서 CPU 성능이 측정된 결과임.
-<img width="740" alt="스크린샷 2021-09-06 오전 10 54 37" src="https://user-images.githubusercontent.com/48666867/132149803-096fc0d5-6c1d-4b42-93de-cbcee5613f89.png">
+아래 표는 실험을 반복하여 얻은 30개 표본의 평균값이다.
+<img width="733" alt="스크린샷 2021-09-06 오전 10 57 44" src="https://user-images.githubusercontent.com/48666867/132150000-df2c67ef-50c1-4272-9e78-579f4db981af.png">
+이들 값을 표본 신뢰도 검정 결과,
+- Instance Type 별로 CPU 개수를 다르게 하였을 때, CPU 개수에 따라 연산처리 속도가 증가하여 CPU 개수에 비례한다는 결과를 얻었다. 그리고 연산하는데 걸리는 시간은 감소하여 반비례한다는 것을 알 수 있었다. 그러나 CPU 개수와 지연 시간은 별다른 상관성이 없는 결과를 볼 수 있다.
 
+아래 표는 실험을 반복하여 얻은 30개 표본의 평균값이다.
+<img width="730" alt="스크린샷 2021-09-06 오전 11 04 03" src="https://user-images.githubusercontent.com/48666867/132150385-b19b746a-1c05-4020-a1c7-675114848c3d.png">
+이들 값을 표본 신뢰도 검정 결과,
+- 위 결과들을 통하여 동일한 CPU 개수에서 thread 개수를 다르게 하였을 때, thread 개수에 따라 연산처리 속도가 증가하여 thread 개수에 비례한다는 결과를 얻었다. 그리고 연산하는데 걸리는 시간은 감소하여 반비례한다는 것을 알 수 있었다. 그러나 thread 개수와 지연 시간은 별다른 상관성이 없는 결과를 볼 수 있다.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 8. 프로젝트 보완
-- **`210401-210524`**
-   - 프로젝트 변수 수정 및 보완 (보건분야 예산액, 의료시설 현황, 의료진 현황을 1인 대비로 변경)
-   - 코드 최종 정리 후 논문 작성
-   - 관련 사례 국내외 논문 조사
- - **`210603-210605`**
-   - KIIT 하계종합학술대회 및 대학생 논문 경진대회 참여 후 연구 논문 발표
-   - 우수논문상(동상) 수상
-   - [관련 기사](https://news.imaeil.com/Education/2021062215014944509)
